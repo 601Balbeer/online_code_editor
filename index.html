@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <h1> Online Code Editor 👨‍💻</h1>
+
+      <div class="editor">
+        <div class="left">
+          <label> <i class="bx bxl-html5"></i>HTML</label>
+
+          <textarea
+            onkeyup="run()"
+            spellcheck="false"
+            id="html-code"
+          ></textarea>
+
+          <label><i class="bx bxl-css3"></i>CSS</label>
+          <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>
+
+          <label><i class="bx bxl-javascript"></i>JavaScript</label>
+          <textarea onkeyup="run()" spellcheck="false" id="js-code"></textarea>
+        </div>
+        <!-- <div class="right"></div> -->
+        <div class="output-div">
+          <label><i class="bx bx-play"></i>OUTPUT</label>
+          <iframe width="600px" height="800px" id="output"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script onkeyup="run()" spellcheck="false" src="sc.js"></script>
+  </body>
+</html>
+
+<!-- 
+        
+          <h1>Change background color with javascript</h1>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDiv">
+<h2>Hello </h2>
+</div>
+ -->
+
+<!-- #myDiv{
+  height:300px;
+  background-color:yellow;
+  color:red;
+  } -->
+
+  <!-- function myFunction() {
+    document.getElementById("myDiv").style.backgroundColor="lightblue";
+    document.getElementById("myDiv").style.color="green";
+    } -->
